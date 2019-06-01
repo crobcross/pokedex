@@ -1,11 +1,12 @@
-/*codigo js*/
-var pokemon = angular.module("pokemon",[])
+// Write your code here
+var Pokemon = angular.module("Pokemon",[])
 
-pokemon.controller("pokedex",function($scope,$rootScope,$http){
+Pokemon.controller("ListadoPokemon",function($scope,$rootScope,$http){
+	$scope.Pokebola = [];
 	$http({
-		method:"GET",
-		url:"https://pokeapi.co/api/v2/pokemon/3"	
-	}).then(function success(pokebola){
-		console.log(pokebola);
+		meth: "GET",
+		url: "https://pokeapi.co/api/v2/pokemon/55"
+	}).then(function success(x){
+		$scope.Pokebola.push(x);
 	})
 })
