@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- Angular Module Call -->
+<!-- 01000100 01100001 01101110 01101001 01100101 01101100 00100000 01000011 01110010 01110101 01111010 -->
 <html ng-app="Pokemon">
+
   <head>
     <!-- JQuery Framework -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,7 +36,7 @@
             <div class="divInfo">
               <!-- Pokemon Picture -->
               <!-- <img class="pokePicture" src="{{x.sprites.front_default}}" alt="Poke"> -->
-              <img class="pokePicture" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Poke">
+              <img class="pokePicture" src="{{y.data.sprites.front_default}}" alt="Poke">
             </div>
             <!-- <div class="pokeName">{{x.data.name}}</div> -->
             <div class="pokeName">{{y.data.name}}</div>
