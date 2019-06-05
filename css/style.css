@@ -1,9 +1,13 @@
 
 
-/* 01000100 01100001 01101110 01101001 01100101 01101100 00100000 01000011 01110010 01110101 01111010 
+/* 01000100 01100001 01101110 01101001 01100101 01101100 00100000 01000011 01110010 01110101 01111010
 */
 html, body {
   width: 100% !important;
+}
+@font-face {
+  font-family:"Pokemon Solid";
+  src=:url(Pokemon Solid.ttf);
 }
 .fullContainer, .fullWidth {
   /* Full Size Container */
@@ -43,18 +47,40 @@ html, body {
 /* Width Pokemon Picture */
 .pokePicture {
   width: 200px;
+  transition: .5s;
 }
 .pokePicture:hover {
-  width: 250px;
+  transform: scale(1.2);
 }
 /* Name of the Pokemon Style */
 .pokeName {
-  border: 3px solid black;
-  padding: 5px;
-  background-color: #3ACFC0;
-  margin-bottom: 20px;
+  padding: 10px;
+  padding-left:5px; 
   text-transform: capitalize;
   font-family: 'Coiny', cursive;
   font-size: 25px;
-  box-shadow: 3px 2px 5px #54585C;
+}
+
+.details
+{
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	bottom: 10px;
+	right: 25px;
+	background: rgba(0,0,0,.8);
+  opacity: 0;
+  transition: 1s;
+}
+.details:hover  {
+  opacity: 100;
+}
+.content
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
 }
